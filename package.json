@@ -1,0 +1,26 @@
+{
+    "name": "changelog-theme",
+    "displayName": "changelog-theme",
+    "description": "ChangeLog syntax highlighter",
+    "version": "0.0.1",
+    "publisher": "kondoumh",
+    "engines": {
+        "vscode": "^1.19.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "changelog",
+            "aliases": ["changelog"],
+            "filenames": ["ChangeLog"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "changelog",
+            "scopeName": "source.changelog",
+            "path": "./syntaxes/changelog.tmLanguage.json"
+        }]
+    }
+}
